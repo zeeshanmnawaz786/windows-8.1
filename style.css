@@ -1,0 +1,657 @@
+*{
+    border-radius: 1px;
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+html{
+    margin: 100px;
+}
+body{
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main{
+    height: 90vh;
+    width: 100%;
+}
+.mainInner{
+    height: 100%;
+}
+.container{
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "message message   message   callender internetExplorer radio    music    . store           store"
+    "message message   message   callender internetExplorer game     camera   . store           store"
+    "sports  sports    sports    money     helpTools        oneDrive oneDrive . store           store"
+    "people  skype     skype     weather   photos           oneNote  oneNote  . healthFitness   foodDrink"
+    "desktop computer  setting   weather   news             news     news     . map             readingList"
+    "desktop videoFile photoFile weather   news             news     news     . map             readingList"
+    ;
+    grid-gap: 5px;
+    grid-template-columns: 2fr 1fr 1fr 
+                           4fr 
+                           2fr 1fr 1fr
+                           1fr
+                           2fr 2fr;
+    grid-template-rows: 1fr 1fr
+                        2fr
+                        2fr
+                        1fr 1fr;
+    justify-content: center;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+}
+.image img{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+.image p{
+    text-align: center;
+    font-size: 13px;
+}
+
+/* ==============================icons start========================== */
+
+.message .image{
+    width: 100%;
+    height: 100%;
+}
+.message .image img{
+    text-align: center;
+    margin:30px 0px 0px 0px;
+    width: 50px;
+    height: 50px;
+}
+.message .image p{
+    text-align: center;
+    font-size: 13px;
+}
+
+.callender .image{
+    width: 100%;
+    height: 100%;
+}
+.callender .image img{
+    text-align: center;
+    margin:30px 0px 0px 0px;
+    width: 50px;
+    height: 50px;
+}
+.callender .image p{
+    text-align: center;
+    font-size: 13px;
+}
+.internetExplorer .image{
+    width: 100%;
+    height: 100%;
+}
+.internetExplorer .image img{
+    text-align: center;
+    margin:30px 0px 0px 0px;
+    width: 50px;
+    height: 50px;
+}
+.internetExplorer .image p{
+    text-align: center;
+    font-size: 13px;
+}
+.radio .image{
+    width: 100%;
+    height: 100%;
+}
+.radio .image img{
+    text-align: center;
+    margin:10px 0px 0px 0px;
+    width: 35px;
+    height: 35px;
+}
+.music .image{
+    width: 100%;
+    height: 100%;
+}
+.music .image img{
+    text-align: center;
+    margin:15px 0px 0px 0px;
+    width: 35px;
+    height: 35px;
+}
+.game .image{
+    width: 100%;
+    height: 100%;
+}
+.game .image img{
+    text-align: center;
+    margin:8px 0px 0px 0px;
+    width: 35px;
+    height: 35px;
+}
+.camera .image{
+    width: 100%;
+    height: 100%;
+}
+.camera .image img{
+    text-align: center;
+    margin:10px 0px 0px 0px;
+    width: 35px;
+    height: 35px;
+}
+.store .image{
+    width: 100%;
+    height: 100%;
+}
+.store .image img{
+    text-align: center;
+    margin:40% 0% 25% 0%;
+    width: 50px;
+    height: 50px;
+}
+.store .image p{
+    text-align: center;
+    font-size: 13px;
+}
+.sports .image{
+    width: 100%;
+    height: 100%;
+}
+.sports .image img{
+    text-align: center;
+    margin:30px 0px 0px 0px;
+    width: 50px;
+    height: 50px;
+}
+.sports .image p{
+    text-align: center;
+    font-size: 13px;
+}
+.money .image{
+    width: 100%;
+    height: 100%;
+}
+.money .image img{
+    text-align: center;
+    margin:30px 0px 0px 0px;
+    width: 50px;
+    height: 50px;
+}
+.money .image p{
+    text-align: center;
+    font-size: 13px;
+}
+.helpTools .image{
+    width: 100%;
+    height: 100%;
+}
+.helpTools .image img{
+    text-align: center;
+    margin:30px 0px 0px 0px;
+    width: 50px;
+    height: 50px;
+}
+.helpTools .image p{
+    text-align: center;
+    font-size: 13px;
+}
+.oneDrive .image{
+    width: 100%;
+    height: 100%;
+}
+.oneDrive .image img{
+    text-align: center;
+    margin:30px 0px 0px 0px;
+    width: 50px;
+    height: 50px;
+}
+.oneDrive .image p{
+    text-align: center;
+    font-size: 13px;
+}
+.people .image{
+    width: 100%;
+    height: 100%;
+}
+.people .image img{
+    text-align: center;
+    margin:30px 0px 0px 0px;
+    width: 50px;
+    height: 50px;
+}
+.people .image p{
+    text-align: center;
+    font-size: 13px;
+}
+.skype .image{
+    width: 100%;
+    height: 100%;
+}
+.skype .image img{
+    text-align: center;
+    margin:30px 0px 0px 0px;
+    width: 50px;
+    height: 50px;
+}
+.skype .image p{
+    text-align: center;
+    font-size: 13px;
+}
+.weather .image{
+    width: 100%;
+    height: 100%;
+}
+.weather .image img{
+    text-align: center;
+    margin: 90px 0px 50px 0px;
+    width: 60px;
+    height: 60px;
+}
+.weather .image p{
+    text-align: center;
+    font-size: 13px;
+}
+.photos .image{
+    width: 100%;
+    height: 100%;
+}
+.photos .image img{
+    text-align: center;
+    margin:30px 0px 0px 0px;
+    width: 50px;
+    height: 50px;
+}
+.photos .image p{
+    text-align: center;
+    font-size: 13px;
+}
+.oneNote .image{
+    width: 100%;
+    height: 100%;
+}
+.oneNote .image img{
+    text-align: center;
+    margin:30px 0px 0px 0px;
+    width: 50px;
+    height: 50px;
+}
+.oneNote .image p{
+    text-align: center;
+    font-size: 13px;
+}
+.healthFitness .image{
+    width: 100%;
+    height: 100%;
+}
+.healthFitness .image img{
+    text-align: center;
+    margin:30px 0px 0px 0px;
+    width: 50px;
+    height: 50px;
+}
+.healthFitness .image p{
+    text-align: center;
+    font-size: 13px;
+}
+.foodDrink .image{
+    width: 100%;
+    height: 100%;
+}
+.foodDrink .image img{
+    text-align: center;
+    margin:30px 0px 0px 0px;
+    width: 50px;
+    height: 50px;
+}
+.foodDrink .image p{
+    text-align: center;
+    font-size: 13px;
+}
+.desktop .image{
+    width: 100%;
+    height: 100%;
+}
+.desktop .image img{
+    text-align: center;
+    margin:30px 0px 0px 0px;
+    width: 50px;
+    height: 50px;
+}
+.desktop .image p{
+    text-align: center;
+    font-size: 13px;
+}
+.computer .image{
+    width: 100%;
+    height: 100%;
+}
+.computer .image img{
+    text-align: center;
+    margin:10px 0px 0px 0px;
+    width: 40px;
+    height: 40px;
+}
+.setting .image{
+    width: 100%;
+    height: 100%;
+}
+.setting .image img{
+    text-align: center;
+    margin:10px 0px 0px 0px;
+    width: 35px;
+    height: 35px;
+}
+.videoFile .image{
+    width: 100%;
+    height: 100%;
+}
+.videoFile .image img{
+    text-align: center;
+    margin:10px 0px 0px 0px;
+    width: 35px;
+    height: 35px;
+}
+.photoFile .image{
+    width: 100%;
+    height: 100%;
+}
+.photoFile .image img{
+    text-align: center;
+    margin:10px 0px 0px 0px;
+    width: 35px;
+    height: 35px;
+}
+.news .image{
+    width: 100%;
+    height: 100%;
+}
+.news .image img{
+    text-align: center;
+    margin:15px 0px 0px 0px;
+    width: 60px;
+    height: 60px;
+}
+.news .image p{
+    text-align: center;
+    font-size: 13px;
+}
+.map .image{
+    width: 100%;
+    height: 100%;
+}
+.map .image img{
+    text-align: center;
+    margin:30px 0px 5px 0px;
+    width: 40px;
+    height: 40px;
+}
+.map .image p{
+    text-align: center;
+    font-size: 13px;
+}
+.readingList .image{
+    width: 100%;
+    height: 100%;
+}
+.readingList .image img{
+    text-align: center;
+    margin:30px 0px 5px 0px;
+    width: 40px;
+    height: 40px;
+}
+.readingList .image p{
+    text-align: center;
+    font-size: 13px;
+}
+
+/* ==============================icons end========================== */
+
+.message{
+    grid-area: message;
+    background-color: #0076c8;
+}
+.message:hover{
+    grid-area: message;
+    background-color: #0076c8;
+    border:3px solid whitesmoke;
+}
+.callender{
+    grid-area:callender ;
+    background-color: #5e3bb9;
+}
+.callender:hover{
+    grid-area:callender ;
+    background-color: #5e3bb9;
+    border:3px solid whitesmoke;
+}
+.internetExplorer{
+    grid-area: internetExplorer;
+    background-color: #2c87ef;
+}
+.internetExplorer:hover{
+    grid-area: internetExplorer;
+    background-color: #2c87ef;
+    border:3px solid whitesmoke;
+}
+.radio{
+    grid-area: radio;
+    background-color: #ae193f;
+}
+.radio:hover{
+    grid-area: radio;
+    background-color: #ae193f;
+    border:3px solid whitesmoke;
+}
+.music{
+    grid-area: music;
+    background-color: #da542d;
+}
+.music:hover{
+    grid-area: music;
+    background-color: #da542d;
+    border:3px solid whitesmoke;
+}
+.game{
+    grid-area: game;
+    background-color: #008f00;
+}
+.game:hover{
+    grid-area: game;
+    background-color: #008f00;
+    border:3px solid whitesmoke;
+}
+.camera{
+    grid-area: camera;
+    background-color: #a700a0;
+}
+.camera:hover{
+    grid-area: camera;
+    background-color: #a700a0;
+    border:3px solid whitesmoke;
+}
+.store{
+    grid-area: store;
+    background-color: #009a00;
+}
+.store:hover{
+    grid-area: store;
+    background-color: #009a00;
+    border:3px solid whitesmoke;
+}
+.sports{
+    grid-area: sports;
+    background-color: #5435ae;
+}
+.sports:hover{
+    grid-area: sports;
+    background-color: #5435ae;
+    border:3px solid whitesmoke;
+}
+.money{
+    grid-area: money;
+    background-color: #008c00;
+}
+.money:hover{
+    grid-area: money;
+    background-color: #008c00;
+    border:3px solid whitesmoke;
+}
+.helpTools{
+    grid-area: helpTools;
+    background-color: #d34827;
+}
+.helpTools:hover{
+    grid-area: helpTools;
+    background-color: #d34827;
+    border:3px solid whitesmoke;
+}
+.oneDrive{
+    grid-area: oneDrive;
+    background-color: #094cb4;
+}
+.oneDrive:hover{
+    grid-area: oneDrive;
+    background-color: #094cb4;
+    border:3px solid whitesmoke;
+}
+.people{
+    grid-area: people;
+    background-color: #d34927;
+}
+.people:hover{
+    grid-area: people;
+    background-color: #d34927;
+    border:3px solid whitesmoke;
+}
+.skype{
+    grid-area: skype;
+    background-color: #00b2f0;
+}
+.skype:hover{
+    grid-area: skype;
+    background-color: #00b2f0;
+    border:3px solid whitesmoke;
+}
+.weather{
+    grid-area: weather;
+    background-color: #2777ec;
+}
+.weather:hover{
+    grid-area: weather;
+    background-color: #2777ec;
+    border:3px solid whitesmoke;
+}
+.photos{
+    grid-area: photos;
+    background-color: #00849a;
+}
+.photos:hover{
+    grid-area: photos;
+    background-color: #00849a;
+    border:3px solid whitesmoke;
+}
+.oneNote{
+    grid-area: oneNote;
+    background-color: #833a7e;
+}
+.oneNote:hover{
+    grid-area: oneNote;
+    background-color: #833a7e;
+    border:3px solid whitesmoke;
+}
+.healthFitness{
+    grid-area: healthFitness;
+    background-color: #d34927;
+}
+.healthFitness:hover{
+    grid-area: healthFitness;
+    background-color: #d34927;
+    border:3px solid whitesmoke;
+}
+
+.foodDrink{
+    grid-area: foodDrink;
+    background-color: #00859b;
+}
+.foodDrink:hover{
+    grid-area: foodDrink;
+    background-color: #00859b;
+    border:3px solid whitesmoke;
+}
+.desktop{
+    grid-area: desktop;
+    background-color: #d59d00;
+}
+.desktop:hover{
+    grid-area: desktop;
+    background-color: #d59d00;
+    border:3px solid whitesmoke;
+}
+.computer{
+    grid-area: computer;
+    background-color: #094db5;
+}
+.computer:hover{
+    grid-area: computer;
+    background-color: #094db5;
+    border:3px solid whitesmoke;
+}
+.setting{
+    grid-area: setting;
+    background-color: #5234ac;
+}
+.setting:hover{
+    grid-area: setting;
+    background-color: #5234ac;
+    border:3px solid whitesmoke;
+}
+.videoFile{
+    grid-area: videoFile;
+    background-color: #696969;
+}
+.videoFile:hover{
+    grid-area: videoFile;
+    background-color: #696969;
+    border:3px solid whitesmoke;
+}
+.photoFile{
+    grid-area: photoFile;
+    background-color: #0a57bf;
+}
+.photoFile:hover{
+    grid-area: photoFile;
+    background-color: #0a57bf;
+    border:3px solid whitesmoke;
+}
+.news{
+    grid-area: news;
+    background-color: #b01a40;
+}
+.news:hover{
+    grid-area: news;
+    background-color: #b01a40;
+    border:3px solid whitesmoke;
+}
+.map{
+    grid-area: map;
+    background-color: #8f0098;
+}
+.map:hover{
+    grid-area: map;
+    background-color: #8f0098;
+    border:3px solid whitesmoke;
+}
+.readingList{
+    grid-area: readingList;
+    background-color: #ae193e;
+}
+.readingList:hover{
+    grid-area: readingList;
+    background-color: #ae193e;
+    border:3px solid whitesmoke;
+}
